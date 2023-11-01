@@ -49,6 +49,11 @@ status: DONE
   justify-content: center;
   display: flex;
   align-items: center;
+  transition: transform .3s;
+}
+
+.form-box:hover {
+  transform: scale(1.02);
 }
 
 h1{
@@ -128,14 +133,15 @@ button{
   letter-spacing: calc(var(--index) / 5);
 }
 
-.zoom {
+.zoomButtonPlay{
   transition: transform .1s;
   margin: 0 auto;
 }
 
-.zoom:hover {
+.zoomButtonPlay:hover {
   transform: scale(1.1);
 }
+
 
 /*
 
@@ -161,8 +167,12 @@ h3{
   justify-content: center;
   display: flex;
   align-items: center;
+  transition: transform .3s;
 }
 
+.form-boxCustom:hover {
+  transform: scale(1.02);
+}
 /*
 
 HERE WE MADE:
@@ -187,9 +197,12 @@ h2{
   border-radius: 20px;
   justify-content: center;
   display: flex;
-  
+  transition: transform .3s;
 }
 
+.form-boxSet:hover {
+  transform: scale(1.02);
+}
 
 .soundbutton {
   user-select: none;
@@ -203,6 +216,17 @@ h2{
 .soundbutton.paused {
 	opacity: .25;
 }
+
+/*
+
+HERE WE MADE:
+animation of the background
+
+status: DONE 
+(maybe change the animation to a different one)
+
+*/
+
 .glowing {
   position: absolute;
   min-width: 700px;
